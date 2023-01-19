@@ -1,16 +1,10 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Tractor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Timer.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Tilemaps/GroundTiles.tres" type="TileSet" id=3]
 [ext_resource path="res://Tilemaps/fences.tres" type="TileSet" id=4]
-[ext_resource path="res://sprout/Sprout Lands - Sprites - premium pack/objects/Farming Plants.png" type="Texture" id=5]
-
-[sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 5 )
-region = Rect2( 64.9141, 1.86343, 14.6504, 29.1723 )
-
-[sub_resource type="CapsuleShape2D" id=2]
+[ext_resource path="res://Objects/Crop.tscn" type="PackedScene" id=5]
 
 [node name="World" type="Node2D"]
 
@@ -50,13 +44,15 @@ z_index = 20
 [node name="Tractor" parent="." instance=ExtResource( 1 )]
 position = Vector2( 638, 349 )
 
-[node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2( 491, 205 )
-z_index = 2
+[node name="CropSpawner" type="Node2D" parent="."]
 
-[node name="Sprite" type="Sprite" parent="StaticBody2D"]
-scale = Vector2( 1.2, 1.2 )
-texture = SubResource( 1 )
+[node name="Crop" parent="CropSpawner" instance=ExtResource( 5 )]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-shape = SubResource( 2 )
+[node name="Crop2" parent="CropSpawner" instance=ExtResource( 5 )]
+position = Vector2( 263, 150 )
+
+[node name="Crop3" parent="CropSpawner" instance=ExtResource( 5 )]
+position = Vector2( 366, 114 )
+
+[node name="Crop4" parent="CropSpawner" instance=ExtResource( 5 )]
+position = Vector2( 651, 221 )
