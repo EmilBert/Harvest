@@ -1,12 +1,14 @@
 extends KinematicBody2D
 
-const SPEED = 500
-const FRICTION = 0.05
+const SPEED = Vector2(0, -600)
+const FRICTION = 0.02
 const ACCELERATOIN = 0.06
-const ROTATION_SPEED = 3
-
+const ROTATION_SPEED = 0.08
+const minWheelAngle = 0.05
+const driftResistance = 20
+const maxSpeed = 700
+var velocity = Vector2()
 var rot = 0
-var velocity = Vector2.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,31 +19,40 @@ func _physics_process(delta):
 	# Update movement vector
 	
 	
-	var magnitude = 0
+	var res = 4
+	var inSpeed = 0
 	var direction = Vector2(0, 0)	
 	if Input.is_action_pressed("ui_right"): # Rotate the player rightwards
-		rotation_degrees += ROTATION_SPEED
+		rotation += ROTATION_SPEED
 		rot += ROTATION_SPEED
 	if Input.is_action_pressed("ui_left"):
-		rotation_degrees  -= ROTATION_SPEED
+		rotation -= ROTATION_SPEED
 		rot -= ROTATION_SPEED
 	if Input.is_action_pressed("ui_down"): 
-		magnitude = -SPEED/2
+		res += 15
 	if Input.is_action_pressed("ui_up"):
-		magnitude = SPEED
-	
+		inSpeed = 1			
 
-	direction = Vector2.UP.rotated(deg2rad(rot)).normalized()
-
-	if magnitude != 0:
+	if inSpeed !=0:
+		
+		velocity.x = lerp(velocity.x, SPEED.rotated(rotation).x, ACCELERATOIN) #get the correct speed direction on the wheels(their rotation decides) 
+		velocity.y = lerp(velocity.y, SPEED.rotated(rotation).y, ACCELERATOIN)
 		# accelerate when there's input
-		velocity.x = lerp(velocity.x, direction.x * magnitude, ACCELERATOIN)
-		velocity.y = lerp(velocity.y, direction.y * magnitude, ACCELERATOIN)
+		var angle = velocity.angle()-(rotation - PI/2) #diffrence in angle between the wheels and the front of the tractor (-pi/2 is from the wheels default rotation)
+		
+		if abs(sin(angle)) > minWheelAngle: #Is the turn big enough to give a drift
+			velocity += Vector2(sin(angle) * driftResistance, 0).rotated(rotation) 
+		else:
+			velocity *= abs(cos(angle))
+		
+		velocity -= velocity.normalized() * res #apply breaking
+		
 	else:
 		# slow down when there's no input
 		velocity.x = lerp(velocity.x, 0, FRICTION)
 		velocity.y = lerp(velocity.y, 0, FRICTION)
 		
+		velocity -= velocity.normalized() * res #apply breaking
 	# Apply movement
-	move_and_slide(velocity)
+	velocity = move_and_slide(velocity)
 
