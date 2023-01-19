@@ -7,7 +7,8 @@ func _ready():
 	pass
 
 
-func _on_Area2D_body_entered(_body: Node):
+func _on_Area2D_body_entered(body: Node):
 	# TODO: Send signal to game master to decrease remaining crop count
 	# Destroy this object
-	queue_free()
+	if body.name == "Tractor":
+		queue_free()
