@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var farmableArea: TileMap = get_node("/root/World/SpawnableCropArea")
+onready var counterSign = get_node("/root/World/CropsCounter")
 var usedCells
 var crop = preload("res://Objects/Crop.tscn")
 
@@ -15,6 +16,9 @@ func _ready():
 			farmableArea.map_to_world(usedCells[availablePlotCoordinate]) + cellSize / 2
 		))
 		add_child(cropInstance)
+
+	# All have spawned, add count to sign
+	counterSign.updateCount()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
