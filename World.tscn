@@ -8,6 +8,10 @@
 [node name="TileMap" type="TileMap" parent="."]
 format = 1
 
+[node name="Tractor" parent="." instance=ExtResource( 1 )]
+position = Vector2( 510, 312 )
+
 [node name="Timer" parent="." instance=ExtResource( 2 )]
+position = Vector2( 7, 26 )
 
 [node name="Tractor" parent="." instance=ExtResource( 1 )]
