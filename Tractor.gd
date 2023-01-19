@@ -1,12 +1,15 @@
 extends KinematicBody2D
 
-const SPEED = 500
+const SPEED = Vector2(0, -8)
 const FRICTION = 0.05
 const ACCELERATOIN = 0.06
-const ROTATION_SPEED = 3
+const ROTATION_SPEED = 0.08
+const minWheelAngle = 0.05
+const driftResistance = 2.5
+const maxSpeed = 700
+var velocity = Vector2()
 
 var rot = 0
-var velocity = Vector2.ZERO
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,31 +20,34 @@ func _physics_process(delta):
 	# Update movement vector
 	
 	
-	var magnitude = 0
+	var res = 4
 	var direction = Vector2(0, 0)	
 	if Input.is_action_pressed("ui_right"): # Rotate the player rightwards
-		rotation_degrees += ROTATION_SPEED
+		rotation += ROTATION_SPEED
 		rot += ROTATION_SPEED
 	if Input.is_action_pressed("ui_left"):
-		rotation_degrees  -= ROTATION_SPEED
+		rotation -= ROTATION_SPEED
 		rot -= ROTATION_SPEED
 	if Input.is_action_pressed("ui_down"): 
-		magnitude = -SPEED/2
+		res += 20
 	if Input.is_action_pressed("ui_up"):
-		magnitude = SPEED
-	
+		velocity += SPEED.rotated(rotation)			
 
-	direction = Vector2.UP.rotated(deg2rad(rot)).normalized()
-
-	if magnitude != 0:
+	if velocity.length() > res:
 		# accelerate when there's input
-		velocity.x = lerp(velocity.x, direction.x * magnitude, ACCELERATOIN)
-		velocity.y = lerp(velocity.y, direction.y * magnitude, ACCELERATOIN)
+		var angle = velocity.angle()-rotation
+		
+		if abs(sin(angle)) > minWheelAngle:
+			velocity += Vector2(sin(angle) * driftResistance, 0).rotated(rotation) 
+		else:
+			velocity *= abs(cos(angle))
+		
+		velocity -= velocity.normalized() * res
+		
 	else:
 		# slow down when there's no input
-		velocity.x = lerp(velocity.x, 0, FRICTION)
-		velocity.y = lerp(velocity.y, 0, FRICTION)
+		velocity = Vector2()
 		
 	# Apply movement
-	move_and_slide(velocity)
+	velocity = move_and_slide(velocity)
 
