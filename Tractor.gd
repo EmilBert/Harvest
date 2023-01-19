@@ -1,7 +1,7 @@
 extends KinematicBody2D
 
 const SPEED = Vector2(0, -600)
-const FRICTION = 0.05
+const FRICTION = 0.02
 const ACCELERATOIN = 0.06
 const ROTATION_SPEED = 0.08
 const minWheelAngle = 0.05
@@ -29,29 +29,30 @@ func _physics_process(delta):
 		rotation -= ROTATION_SPEED
 		rot -= ROTATION_SPEED
 	if Input.is_action_pressed("ui_down"): 
-		res += 20
+		res += 15
 	if Input.is_action_pressed("ui_up"):
 		inSpeed = 1			
 
 	if inSpeed !=0:
 		
-		velocity.x = lerp(velocity.x, SPEED.rotated(rotation).x, ACCELERATOIN)
+		velocity.x = lerp(velocity.x, SPEED.rotated(rotation).x, ACCELERATOIN) #get the correct speed direction on the wheels(their rotation decides) 
 		velocity.y = lerp(velocity.y, SPEED.rotated(rotation).y, ACCELERATOIN)
 		# accelerate when there's input
-		var angle = velocity.angle()-(rotation - PI/2)
+		var angle = velocity.angle()-(rotation - PI/2) #diffrence in angle between the wheels and the front of the tractor (-pi/2 is from the wheels default rotation)
 		
-		if abs(sin(angle)) > minWheelAngle:
+		if abs(sin(angle)) > minWheelAngle: #Is the turn big enough to give a drift
 			velocity += Vector2(sin(angle) * driftResistance, 0).rotated(rotation) 
 		else:
 			velocity *= abs(cos(angle))
 		
-		velocity -= velocity.normalized() * res
+		velocity -= velocity.normalized() * res #apply breaking
 		
 	else:
 		# slow down when there's no input
 		velocity.x = lerp(velocity.x, 0, FRICTION)
 		velocity.y = lerp(velocity.y, 0, FRICTION)
 		
+		velocity -= velocity.normalized() * res #apply breaking
 	# Apply movement
 	velocity = move_and_slide(velocity)
 
