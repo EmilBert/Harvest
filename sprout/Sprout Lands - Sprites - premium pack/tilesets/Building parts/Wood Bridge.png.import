@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Wood Bridge.png-ca1832c0c19794161b4cfaf5ac79200f.stex"
+path="res://.import/Wood Bridge.png-cdf3516f36c6b84f4aef05e614881e31.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Wood Bridge.png"
-dest_files=[ "res://.import/Wood Bridge.png-ca1832c0c19794161b4cfaf5ac79200f.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Wood Bridge.png"
+dest_files=[ "res://.import/Wood Bridge.png-cdf3516f36c6b84f4aef05e614881e31.stex" ]
 
 [params]
 

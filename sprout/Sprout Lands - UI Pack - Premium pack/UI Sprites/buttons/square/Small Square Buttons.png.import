@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Small Square Buttons.png-36f4566f961d1e34f36fd4bbc8d81596.stex"
+path="res://.import/Small Square Buttons.png-394a7bb617c7a153ece784e8f3abc807.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/buttons/square/Small Square Buttons.png"
-dest_files=[ "res://.import/Small Square Buttons.png-36f4566f961d1e34f36fd4bbc8d81596.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/buttons/square/Small Square Buttons.png"
+dest_files=[ "res://.import/Small Square Buttons.png-394a7bb617c7a153ece784e8f3abc807.stex" ]
 
 [params]
 

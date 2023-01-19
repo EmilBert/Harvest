@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tree pear sprites.png-67a82f009c9b684971b14a773a9b44e2.stex"
+path="res://.import/tree pear sprites.png-aaa39fa81f2abc2180ece125cfd5eb48.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/objects/Tree animations/tree pear sprites.png"
-dest_files=[ "res://.import/tree pear sprites.png-67a82f009c9b684971b14a773a9b44e2.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/objects/Tree animations/tree pear sprites.png"
+dest_files=[ "res://.import/tree pear sprites.png-aaa39fa81f2abc2180ece125cfd5eb48.stex" ]
 
 [params]
 

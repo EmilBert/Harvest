@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mushrooms, Flowers, Stones.png-131a4494bbbd176dfb2eb6b84f9cdace.stex"
+path="res://.import/Mushrooms, Flowers, Stones.png-8c0e12f0340e50b8e8d018d29c4994e5.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/objects/Mushrooms, Flowers, Stones.png"
-dest_files=[ "res://.import/Mushrooms, Flowers, Stones.png-131a4494bbbd176dfb2eb6b84f9cdace.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/objects/Mushrooms, Flowers, Stones.png"
+dest_files=[ "res://.import/Mushrooms, Flowers, Stones.png-8c0e12f0340e50b8e8d018d29c4994e5.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/signs.png-bee27c8492a53e2b0ca22df9460e537c.stex"
+path="res://.import/signs.png-ab2cf9cddea557531804d75a4a2d5e76.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/objects/signs.png"
-dest_files=[ "res://.import/signs.png-bee27c8492a53e2b0ca22df9460e537c.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/objects/signs.png"
+dest_files=[ "res://.import/signs.png-ab2cf9cddea557531804d75a4a2d5e76.stex" ]
 
 [params]
 

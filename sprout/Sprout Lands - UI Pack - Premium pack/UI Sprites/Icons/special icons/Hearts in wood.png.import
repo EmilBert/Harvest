@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hearts in wood.png-8e89309934781609ed0c35444766bb5b.stex"
+path="res://.import/Hearts in wood.png-02e7edae5ae4e4c311ded3a58f7d1bb0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/Hearts in wood.png"
-dest_files=[ "res://.import/Hearts in wood.png-8e89309934781609ed0c35444766bb5b.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/Hearts in wood.png"
+dest_files=[ "res://.import/Hearts in wood.png-02e7edae5ae4e4c311ded3a58f7d1bb0.stex" ]
 
 [params]
 

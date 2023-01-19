@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/baby light cow animations sprites.png-6471d623613e7f497752d156a032f795.stex"
+path="res://.import/baby light cow animations sprites.png-bbe3a5d64323e9e128e289e3f4792073.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/baby cow/baby light cow animations sprites.png"
-dest_files=[ "res://.import/baby light cow animations sprites.png-6471d623613e7f497752d156a032f795.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/baby cow/baby light cow animations sprites.png"
+dest_files=[ "res://.import/baby light cow animations sprites.png-bbe3a5d64323e9e128e289e3f4792073.stex" ]
 
 [params]
 

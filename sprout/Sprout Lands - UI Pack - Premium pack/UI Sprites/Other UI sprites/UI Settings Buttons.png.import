@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/UI Settings Buttons.png-b60e7c15b6d841f32a352db437a3a999.stex"
+path="res://.import/UI Settings Buttons.png-cdede0ee5ff87feb079677522477b6fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/UI Settings Buttons.png"
-dest_files=[ "res://.import/UI Settings Buttons.png-b60e7c15b6d841f32a352db437a3a999.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/UI Settings Buttons.png"
+dest_files=[ "res://.import/UI Settings Buttons.png-cdede0ee5ff87feb079677522477b6fb.stex" ]
 
 [params]
 

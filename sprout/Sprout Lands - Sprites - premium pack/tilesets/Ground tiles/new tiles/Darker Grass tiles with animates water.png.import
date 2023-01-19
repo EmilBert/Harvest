@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Darker Grass tiles with animates water.png-60a14b2faadeeb252adf31e2c2ac2007.stex"
+path="res://.import/Darker Grass tiles with animates water.png-0081fa0804cc45fb09bfe3b8efbd2ec8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Darker Grass tiles with animates water.png"
-dest_files=[ "res://.import/Darker Grass tiles with animates water.png-60a14b2faadeeb252adf31e2c2ac2007.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Darker Grass tiles with animates water.png"
+dest_files=[ "res://.import/Darker Grass tiles with animates water.png-0081fa0804cc45fb09bfe3b8efbd2ec8.stex" ]
 
 [params]
 

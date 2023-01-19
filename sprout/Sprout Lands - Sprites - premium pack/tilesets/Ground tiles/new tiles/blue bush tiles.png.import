@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/blue bush tiles.png-57e0fb7ca8053f76dc756f0b652d655e.stex"
+path="res://.import/blue bush tiles.png-e5b4addd7040a1d27c1219fdfffaad52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/blue bush tiles.png"
-dest_files=[ "res://.import/blue bush tiles.png-57e0fb7ca8053f76dc756f0b652d655e.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/blue bush tiles.png"
+dest_files=[ "res://.import/blue bush tiles.png-e5b4addd7040a1d27c1219fdfffaad52.stex" ]
 
 [params]
 

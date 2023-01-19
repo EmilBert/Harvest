@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/coins.png-b756ccabaa1ce4b4ed8a9d136a4dcad8.stex"
+path="res://.import/coins.png-9aae97644771ac2d02e58f2d2987f154.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/coins.png"
-dest_files=[ "res://.import/coins.png-b756ccabaa1ce4b4ed8a9d136a4dcad8.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/coins.png"
+dest_files=[ "res://.import/coins.png-9aae97644771ac2d02e58f2d2987f154.stex" ]
 
 [params]
 

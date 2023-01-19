@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stamina circle with black outline sprite sheet .png-281a8d63f596123af62a8fb1848d1784.stex"
+path="res://.import/Stamina circle with black outline sprite sheet .png-bfd44f1f02871889cc28753f339236ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/Stamina circle with black outline sprite sheet .png"
-dest_files=[ "res://.import/Stamina circle with black outline sprite sheet .png-281a8d63f596123af62a8fb1848d1784.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/Stamina circle with black outline sprite sheet .png"
+dest_files=[ "res://.import/Stamina circle with black outline sprite sheet .png-bfd44f1f02871889cc28753f339236ad.stex" ]
 
 [params]
 

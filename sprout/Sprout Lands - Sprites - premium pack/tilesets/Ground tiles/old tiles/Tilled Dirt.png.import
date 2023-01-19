@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Tilled Dirt.png-478f162b444ef38ae04a2dd5148576a1.stex"
+path="res://.import/Tilled Dirt.png-dc700d0cba0459a9f0cc6dbb20a05c56.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/old tiles/Tilled Dirt.png"
-dest_files=[ "res://.import/Tilled Dirt.png-478f162b444ef38ae04a2dd5148576a1.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/old tiles/Tilled Dirt.png"
+dest_files=[ "res://.import/Tilled Dirt.png-dc700d0cba0459a9f0cc6dbb20a05c56.stex" ]
 
 [params]
 

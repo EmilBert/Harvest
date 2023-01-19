@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chest.png-c3868359ee17fd1386edd6fec86ee517.stex"
+path="res://.import/Chest.png-bf7ebef8e3436e5b5939f1b9abdc7356.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Chest.png"
-dest_files=[ "res://.import/Chest.png-c3868359ee17fd1386edd6fec86ee517.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Chest.png"
+dest_files=[ "res://.import/Chest.png-bf7ebef8e3436e5b5939f1b9abdc7356.stex" ]
 
 [params]
 

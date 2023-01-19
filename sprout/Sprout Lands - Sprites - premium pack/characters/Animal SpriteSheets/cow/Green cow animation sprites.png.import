@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Green cow animation sprites.png-d3382d0fc13b0fe0f2daf74be96bfdc8.stex"
+path="res://.import/Green cow animation sprites.png-86d71cce9b13e1fa84f2de27c77ab74b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/cow/Green cow animation sprites.png"
-dest_files=[ "res://.import/Green cow animation sprites.png-d3382d0fc13b0fe0f2daf74be96bfdc8.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/cow/Green cow animation sprites.png"
+dest_files=[ "res://.import/Green cow animation sprites.png-86d71cce9b13e1fa84f2de27c77ab74b.stex" ]
 
 [params]
 

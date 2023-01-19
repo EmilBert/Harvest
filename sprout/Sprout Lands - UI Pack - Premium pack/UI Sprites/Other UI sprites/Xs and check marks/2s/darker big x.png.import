@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/darker big x.png-7a308b42bd2684fcdf7dc9b8fe64557e.stex"
+path="res://.import/darker big x.png-ae7f7e4bc42b21c01295423666025821.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/Xs and check marks/2s/darker big x.png"
-dest_files=[ "res://.import/darker big x.png-7a308b42bd2684fcdf7dc9b8fe64557e.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/Xs and check marks/2s/darker big x.png"
+dest_files=[ "res://.import/darker big x.png-ae7f7e4bc42b21c01295423666025821.stex" ]
 
 [params]
 

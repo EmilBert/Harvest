@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Brown cow animations.png-ed54d9c636b5af65ce68515feb2f7d4a.stex"
+path="res://.import/Brown cow animations.png-fed7ec0563fc769da11ba579bd41039b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/cow/Brown cow animations.png"
-dest_files=[ "res://.import/Brown cow animations.png-ed54d9c636b5af65ce68515feb2f7d4a.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/cow/Brown cow animations.png"
+dest_files=[ "res://.import/Brown cow animations.png-fed7ec0563fc769da11ba579bd41039b.stex" ]
 
 [params]
 

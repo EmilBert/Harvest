@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Triangle Mouse icon 2.png-963253554c314e43b097377624f1ea3d.stex"
+path="res://.import/Triangle Mouse icon 2.png-950b3b0f1e43c59968c861eca72bb2cf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Triangle Mouse icon 2.png"
-dest_files=[ "res://.import/Triangle Mouse icon 2.png-963253554c314e43b097377624f1ea3d.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Triangle Mouse icon 2.png"
+dest_files=[ "res://.import/Triangle Mouse icon 2.png-950b3b0f1e43c59968c861eca72bb2cf.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Piknik basket.png-a9b830ef816dd2d259393ecffbe0d67f.stex"
+path="res://.import/Piknik basket.png-157e0455532fef46c0906095eb8ee1be.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/objects/Piknik basket.png"
-dest_files=[ "res://.import/Piknik basket.png-a9b830ef816dd2d259393ecffbe0d67f.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/objects/Piknik basket.png"
+dest_files=[ "res://.import/Piknik basket.png-157e0455532fef46c0906095eb8ee1be.stex" ]
 
 [params]
 

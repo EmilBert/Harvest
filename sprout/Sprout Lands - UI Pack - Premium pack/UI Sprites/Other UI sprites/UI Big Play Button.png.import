@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/UI Big Play Button.png-07addd5b0fd2154a098e671391271bbc.stex"
+path="res://.import/UI Big Play Button.png-c9e0aa117553f702d8dae629320d7131.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/UI Big Play Button.png"
-dest_files=[ "res://.import/UI Big Play Button.png-07addd5b0fd2154a098e671391271bbc.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/UI Big Play Button.png"
+dest_files=[ "res://.import/UI Big Play Button.png-c9e0aa117553f702d8dae629320d7131.stex" ]
 
 [params]
 

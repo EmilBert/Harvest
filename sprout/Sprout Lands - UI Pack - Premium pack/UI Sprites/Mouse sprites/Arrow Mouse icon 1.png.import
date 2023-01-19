@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Arrow Mouse icon 1.png-d290312ad6a0496d41859e55a1ce6f41.stex"
+path="res://.import/Arrow Mouse icon 1.png-5f208b5d0594f7beba4d7cee2e0380b4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Arrow Mouse icon 1.png"
-dest_files=[ "res://.import/Arrow Mouse icon 1.png-d290312ad6a0496d41859e55a1ce6f41.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Arrow Mouse icon 1.png"
+dest_files=[ "res://.import/Arrow Mouse icon 1.png-5f208b5d0594f7beba4d7cee2e0380b4.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Premade dialog box medium.png-053ee79862827dc12b617e50eb31bbb4.stex"
+path="res://.import/Premade dialog box medium.png-50ca99fde5cabc9788e61918ed8be01d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Dialouge UI/Premade dialog box medium.png"
-dest_files=[ "res://.import/Premade dialog box medium.png-053ee79862827dc12b617e50eb31bbb4.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Dialouge UI/Premade dialog box medium.png"
+dest_files=[ "res://.import/Premade dialog box medium.png-50ca99fde5cabc9788e61918ed8be01d.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Water_2.png-d86fa35b50f07ab59302a763dbe28b76.stex"
+path="res://.import/Water_2.png-3c389b85c88ae9211adcba8315c3c476.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/water frames/Water_2.png"
-dest_files=[ "res://.import/Water_2.png-d86fa35b50f07ab59302a763dbe28b76.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/water frames/Water_2.png"
+dest_files=[ "res://.import/Water_2.png-3c389b85c88ae9211adcba8315c3c476.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/baby pink cow animations sprites.png-c79f4f120afc481a31f93fea0529354c.stex"
+path="res://.import/baby pink cow animations sprites.png-a97e7663fba0057d7c250d7a266ead0c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/baby cow/baby pink cow animations sprites.png"
-dest_files=[ "res://.import/baby pink cow animations sprites.png-c79f4f120afc481a31f93fea0529354c.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/characters/Animal SpriteSheets/baby cow/baby pink cow animations sprites.png"
+dest_files=[ "res://.import/baby pink cow animations sprites.png-a97e7663fba0057d7c250d7a266ead0c.stex" ]
 
 [params]
 

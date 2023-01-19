@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Triangle small Mouse icon 1.png-34f5ade9b9b3c1cabacd0d03ae6c2b7f.stex"
+path="res://.import/Triangle small Mouse icon 1.png-a29302463b437a23e84e27b0d9949332.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Triangle small Mouse icon 1.png"
-dest_files=[ "res://.import/Triangle small Mouse icon 1.png-34f5ade9b9b3c1cabacd0d03ae6c2b7f.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Triangle small Mouse icon 1.png"
+dest_files=[ "res://.import/Triangle small Mouse icon 1.png-a29302463b437a23e84e27b0d9949332.stex" ]
 
 [params]
 

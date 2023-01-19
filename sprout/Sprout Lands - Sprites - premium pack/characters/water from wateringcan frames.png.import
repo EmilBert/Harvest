@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/water from wateringcan frames.png-54d099a4437ecf11d191e3e273398675.stex"
+path="res://.import/water from wateringcan frames.png-636b98694ee6ca8067317327f8cd0ad6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/characters/water from wateringcan frames.png"
-dest_files=[ "res://.import/water from wateringcan frames.png-54d099a4437ecf11d191e3e273398675.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/characters/water from wateringcan frames.png"
+dest_files=[ "res://.import/water from wateringcan frames.png-636b98694ee6ca8067317327f8cd0ad6.stex" ]
 
 [params]
 

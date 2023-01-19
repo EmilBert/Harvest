@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Hills.png-a32cdea5ff8588385aba98ceb4fbb977.stex"
+path="res://.import/Hills.png-ce8049ea8817d691409774e3977fcbf7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/old tiles/Hills.png"
-dest_files=[ "res://.import/Hills.png-a32cdea5ff8588385aba98ceb4fbb977.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/old tiles/Hills.png"
+dest_files=[ "res://.import/Hills.png-ce8049ea8817d691409774e3977fcbf7.stex" ]
 
 [params]
 

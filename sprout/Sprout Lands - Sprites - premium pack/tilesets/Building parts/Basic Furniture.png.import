@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Basic Furniture.png-acafc8241ccaac9b9de16be90956c95b.stex"
+path="res://.import/Basic Furniture.png-f5e08c155b7c0ea342d7e57d4686cc00.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Basic Furniture.png"
-dest_files=[ "res://.import/Basic Furniture.png-acafc8241ccaac9b9de16be90956c95b.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Basic Furniture.png"
+dest_files=[ "res://.import/Basic Furniture.png-f5e08c155b7c0ea342d7e57d4686cc00.stex" ]
 
 [params]
 

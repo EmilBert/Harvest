@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/dialog box character finished talking click to continue indicator - spritesheet .png-629e4901fc4a8f9e77d0b0e573683c02.stex"
+path="res://.import/dialog box character finished talking click to continue indicator - spritesheet .png-ca7afd4ddbed9f9b7415c3ae190d1d69.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Dialouge UI/dialog box character finished talking click to continue indicator - spritesheet .png"
-dest_files=[ "res://.import/dialog box character finished talking click to continue indicator - spritesheet .png-629e4901fc4a8f9e77d0b0e573683c02.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Dialouge UI/dialog box character finished talking click to continue indicator - spritesheet .png"
+dest_files=[ "res://.import/dialog box character finished talking click to continue indicator - spritesheet .png-ca7afd4ddbed9f9b7415c3ae190d1d69.stex" ]
 
 [params]
 

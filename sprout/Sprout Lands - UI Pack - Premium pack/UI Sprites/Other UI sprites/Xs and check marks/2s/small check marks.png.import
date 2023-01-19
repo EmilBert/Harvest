@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/small check marks.png-ff17c6421f57475522490c6f063111f4.stex"
+path="res://.import/small check marks.png-c120c489a077fb6da89a875c16b55731.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/Xs and check marks/2s/small check marks.png"
-dest_files=[ "res://.import/small check marks.png-ff17c6421f57475522490c6f063111f4.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Other UI sprites/Xs and check marks/2s/small check marks.png"
+dest_files=[ "res://.import/small check marks.png-c120c489a077fb6da89a875c16b55731.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/door animation sprites.png-cfbb4014f95c6d94c4fb90a80eaa2216.stex"
+path="res://.import/door animation sprites.png-7aacc9dcef006f202f615aa983dbf5ba.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/door animation sprites.png"
-dest_files=[ "res://.import/door animation sprites.png-cfbb4014f95c6d94c4fb90a80eaa2216.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/door animation sprites.png"
+dest_files=[ "res://.import/door animation sprites.png-7aacc9dcef006f202f615aa983dbf5ba.stex" ]
 
 [params]
 

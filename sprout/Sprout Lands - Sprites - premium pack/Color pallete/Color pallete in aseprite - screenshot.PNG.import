@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Color pallete in aseprite - screenshot.PNG-7d41ca27a32e65a89e154a9d4b344dc6.stex"
+path="res://.import/Color pallete in aseprite - screenshot.PNG-2a637f445f2d9521d6a20a7d3a64126a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/Color pallete/Color pallete in aseprite - screenshot.PNG"
-dest_files=[ "res://.import/Color pallete in aseprite - screenshot.PNG-7d41ca27a32e65a89e154a9d4b344dc6.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/Color pallete/Color pallete in aseprite - screenshot.PNG"
+dest_files=[ "res://.import/Color pallete in aseprite - screenshot.PNG-2a637f445f2d9521d6a20a7d3a64126a.stex" ]
 
 [params]
 

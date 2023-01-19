@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Darker Soil ground tiles.png-cdf072cb2fe521adff053a17479845d6.stex"
+path="res://.import/Darker Soil ground tiles.png-3a287a8ccf96122e46711451c790aee4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Darker Soil ground tiles.png"
-dest_files=[ "res://.import/Darker Soil ground tiles.png-cdf072cb2fe521adff053a17479845d6.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Darker Soil ground tiles.png"
+dest_files=[ "res://.import/Darker Soil ground tiles.png-3a287a8ccf96122e46711451c790aee4.stex" ]
 
 [params]
 

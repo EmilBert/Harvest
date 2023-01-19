@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Small Happines-Sadness icons.png-e55eb917668ba1b46684e12a657b5657.stex"
+path="res://.import/Small Happines-Sadness icons.png-fc29ae69c5f4e489969fac4676d09e03.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/Small Happines-Sadness icons.png"
-dest_files=[ "res://.import/Small Happines-Sadness icons.png-e55eb917668ba1b46684e12a657b5657.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/Small Happines-Sadness icons.png"
+dest_files=[ "res://.import/Small Happines-Sadness icons.png-fc29ae69c5f4e489969fac4676d09e03.stex" ]
 
 [params]
 

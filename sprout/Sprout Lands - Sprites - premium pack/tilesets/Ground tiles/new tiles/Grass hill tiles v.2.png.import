@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass hill tiles v.2.png-1b9d8371040ec19d120011879d3bed05.stex"
+path="res://.import/Grass hill tiles v.2.png-5972cbb3f6719b626e0e3617b0259471.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Grass hill tiles v.2.png"
-dest_files=[ "res://.import/Grass hill tiles v.2.png-1b9d8371040ec19d120011879d3bed05.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Grass hill tiles v.2.png"
+dest_files=[ "res://.import/Grass hill tiles v.2.png-5972cbb3f6719b626e0e3617b0259471.stex" ]
 
 [params]
 

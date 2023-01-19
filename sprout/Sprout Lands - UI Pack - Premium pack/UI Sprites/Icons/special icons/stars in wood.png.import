@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stars in wood.png-ca47903f61d61ec7d490d739152904d2.stex"
+path="res://.import/stars in wood.png-87918ceb023577ed1e7863a9a703a0e7.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/stars in wood.png"
-dest_files=[ "res://.import/stars in wood.png-ca47903f61d61ec7d490d739152904d2.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/stars in wood.png"
+dest_files=[ "res://.import/stars in wood.png-87918ceb023577ed1e7863a9a703a0e7.stex" ]
 
 [params]
 

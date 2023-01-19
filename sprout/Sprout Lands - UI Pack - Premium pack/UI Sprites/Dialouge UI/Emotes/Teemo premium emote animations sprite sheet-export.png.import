@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Teemo premium emote animations sprite sheet-export.png-58c26ad11fc15b8272a3d19258ee6fa1.stex"
+path="res://.import/Teemo premium emote animations sprite sheet-export.png-5182045b0cd3c8456e399e8df88bcbf4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Dialouge UI/Emotes/Teemo premium emote animations sprite sheet-export.png"
-dest_files=[ "res://.import/Teemo premium emote animations sprite sheet-export.png-58c26ad11fc15b8272a3d19258ee6fa1.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Dialouge UI/Emotes/Teemo premium emote animations sprite sheet-export.png"
+dest_files=[ "res://.import/Teemo premium emote animations sprite sheet-export.png-5182045b0cd3c8456e399e8df88bcbf4.stex" ]
 
 [params]
 

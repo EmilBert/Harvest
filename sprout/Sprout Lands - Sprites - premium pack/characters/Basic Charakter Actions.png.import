@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Basic Charakter Actions.png-024282949c6fdb59af439eb0ef3a9d0d.stex"
+path="res://.import/Basic Charakter Actions.png-f3265240b4aaee88e63a1cd5a35fbe52.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/characters/Basic Charakter Actions.png"
-dest_files=[ "res://.import/Basic Charakter Actions.png-024282949c6fdb59af439eb0ef3a9d0d.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/characters/Basic Charakter Actions.png"
+dest_files=[ "res://.import/Basic Charakter Actions.png-f3265240b4aaee88e63a1cd5a35fbe52.stex" ]
 
 [params]
 

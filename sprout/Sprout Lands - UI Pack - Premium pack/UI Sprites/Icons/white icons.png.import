@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/white icons.png-8acdf7c2b035df5dc231a4700c476f9d.stex"
+path="res://.import/white icons.png-8f04320792669307c2ea50b2f5178d5e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/white icons.png"
-dest_files=[ "res://.import/white icons.png-8acdf7c2b035df5dc231a4700c476f9d.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/white icons.png"
+dest_files=[ "res://.import/white icons.png-8f04320792669307c2ea50b2f5178d5e.stex" ]
 
 [params]
 

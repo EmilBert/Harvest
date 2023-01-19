@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tools and meterials.png-aae2c578dbb712824d374a9296cc36ab.stex"
+path="res://.import/tools and meterials.png-c24d3fd264852f58fb4db04286ec3a78.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/Items/tools and meterials.png"
-dest_files=[ "res://.import/tools and meterials.png-aae2c578dbb712824d374a9296cc36ab.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/Items/tools and meterials.png"
+dest_files=[ "res://.import/tools and meterials.png-c24d3fd264852f58fb4db04286ec3a78.stex" ]
 
 [params]
 

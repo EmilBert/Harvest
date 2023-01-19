@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/medium colored round buttons.png-338649692a59b53b3e10f0114646f761.stex"
+path="res://.import/medium colored round buttons.png-b2acab65126bcefe9fbe2cb41b9fe607.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/buttons/round/medium colored round buttons.png"
-dest_files=[ "res://.import/medium colored round buttons.png-338649692a59b53b3e10f0114646f761.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/buttons/round/medium colored round buttons.png"
+dest_files=[ "res://.import/medium colored round buttons.png-b2acab65126bcefe9fbe2cb41b9fe607.stex" ]
 
 [params]
 

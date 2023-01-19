@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/tree apple sprites.png-583b68cec919b3b08a03ff0c26c0b6fd.stex"
+path="res://.import/tree apple sprites.png-c756cab8bbf90b0b7738731ddd5bb95e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/objects/Tree animations/tree apple sprites.png"
-dest_files=[ "res://.import/tree apple sprites.png-583b68cec919b3b08a03ff0c26c0b6fd.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/objects/Tree animations/tree apple sprites.png"
+dest_files=[ "res://.import/tree apple sprites.png-c756cab8bbf90b0b7738731ddd5bb95e.stex" ]
 
 [params]
 

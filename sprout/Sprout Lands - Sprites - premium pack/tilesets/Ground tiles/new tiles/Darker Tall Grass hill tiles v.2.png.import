@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Darker Tall Grass hill tiles v.2.png-87930923714727e349ab0197dbccedd6.stex"
+path="res://.import/Darker Tall Grass hill tiles v.2.png-8e8a1bc342a39119a05d487902fc2eb3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Darker Tall Grass hill tiles v.2.png"
-dest_files=[ "res://.import/Darker Tall Grass hill tiles v.2.png-87930923714727e349ab0197dbccedd6.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Darker Tall Grass hill tiles v.2.png"
+dest_files=[ "res://.import/Darker Tall Grass hill tiles v.2.png-8e8a1bc342a39119a05d487902fc2eb3.stex" ]
 
 [params]
 

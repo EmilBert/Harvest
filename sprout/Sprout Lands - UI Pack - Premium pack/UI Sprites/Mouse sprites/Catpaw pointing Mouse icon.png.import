@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Catpaw pointing Mouse icon.png-3b64d77ba7cd0df5ee0bf07251f9fd64.stex"
+path="res://.import/Catpaw pointing Mouse icon.png-57362ff84f53da38224bff72c34fc4e9.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Catpaw pointing Mouse icon.png"
-dest_files=[ "res://.import/Catpaw pointing Mouse icon.png-3b64d77ba7cd0df5ee0bf07251f9fd64.stex" ]
+source_file="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Mouse sprites/Catpaw pointing Mouse icon.png"
+dest_files=[ "res://.import/Catpaw pointing Mouse icon.png-57362ff84f53da38224bff72c34fc4e9.stex" ]
 
 [params]
 

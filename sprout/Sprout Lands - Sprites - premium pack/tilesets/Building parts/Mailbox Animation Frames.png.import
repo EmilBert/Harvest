@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Mailbox Animation Frames.png-bd1f203a9a4e1774e66a8792fe2610ee.stex"
+path="res://.import/Mailbox Animation Frames.png-ce87990cef54367c880c2ac5c20f0472.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Mailbox Animation Frames.png"
-dest_files=[ "res://.import/Mailbox Animation Frames.png-bd1f203a9a4e1774e66a8792fe2610ee.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Building parts/Mailbox Animation Frames.png"
+dest_files=[ "res://.import/Mailbox Animation Frames.png-ce87990cef54367c880c2ac5c20f0472.stex" ]
 
 [params]
 

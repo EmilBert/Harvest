@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Grass tiles with animates water-export.png-f2a3245e27e62c5799a7e6330fea2726.stex"
+path="res://.import/Grass tiles with animates water-export.png-b69b540c19faa7eef5976d9b0b5d7de1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://farming/assets/sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Grass tiles with animates water-export.png"
-dest_files=[ "res://.import/Grass tiles with animates water-export.png-f2a3245e27e62c5799a7e6330fea2726.stex" ]
+source_file="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Grass tiles with animates water-export.png"
+dest_files=[ "res://.import/Grass tiles with animates water-export.png-b69b540c19faa7eef5976d9b0b5d7de1.stex" ]
 
 [params]
 
