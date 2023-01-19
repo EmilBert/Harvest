@@ -41,11 +41,7 @@ func _physics_process(delta):
 		# slow down when there's no input
 		velocity.x = lerp(velocity.x, 0, FRICTION)
 		velocity.y = lerp(velocity.y, 0, FRICTION)
-
-		# Debug log
 		
-	print("velocity: ", velocity)
-	
 	# Apply movement
 	move_and_slide(velocity)
 
