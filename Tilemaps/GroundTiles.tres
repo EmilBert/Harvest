@@ -11,22 +11,22 @@
 [ext_resource path="res://sprout/Sprout Lands - Sprites - premium pack/tilesets/Ground tiles/new tiles/Darker Grass tile layers.png" type="Texture" id=9]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
-points = PoolVector2Array( 0, 16, 16, 16, 16, 16, 0, 16 )
+points = PoolVector2Array( 9.96387, 32.0979, 0, 32.0979, 0, -15.9051, 9.96387, -15.9051 )
 
 [sub_resource type="ConvexPolygonShape2D" id=2]
-points = PoolVector2Array( 16, 16, 16, 16, 16, 16, 16, 16 )
+points = PoolVector2Array( 16.0971, 22.5646, 6.11518, 22.5646, 6.11518, -16.0173, 16.0971, -16.0173 )
 
 [sub_resource type="ConvexPolygonShape2D" id=3]
-points = PoolVector2Array( 16, 16, 16, 16, 16, 16, 16, 16 )
+points = PoolVector2Array( 31.8728, 10.9741, -15.7938, 10.9741, -15.7938, 0.319202, 31.8728, 0.319202 )
 
 [sub_resource type="ConvexPolygonShape2D" id=4]
-points = PoolVector2Array( 16, 16, 16, 16, 16, 16, 16, 16 )
+points = PoolVector2Array( 32.0971, 15.8209, -16, 15.8209, -16, 3.93228, 32.0971, 3.93228 )
 
 [sub_resource type="ConvexPolygonShape2D" id=5]
 points = PoolVector2Array( 0, 16, 16, 16, 16, 16, 0, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=6]
-points = PoolVector2Array( 16, 16, 16, 16, 16, 16, 16, 16 )
+points = PoolVector2Array( 6.60119, 11.5194, 11.6638, 8.32606, 16, 16, 16, 16 )
 
 [sub_resource type="ConvexPolygonShape2D" id=7]
 points = PoolVector2Array( 0, 4.04688, 0.3125, 3.85938, 3.8125, 4.17188, 6.125, 1.67188, 6, 0, 15.875, 0.171875, 15.875, 15.6719, 0.125, 15.8594 )

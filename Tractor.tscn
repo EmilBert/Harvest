@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Tractor.gd" type="Script" id=1]
 [ext_resource path="res://tractor.png" type="Texture" id=2]
 
 [sub_resource type="AtlasTexture" id=4]
+flags = 4
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 32, 32 )
 
@@ -18,6 +19,9 @@ animations = [ {
 [sub_resource type="CircleShape2D" id=5]
 radius = 29.4397
 
+[sub_resource type="RectangleShape2D" id=6]
+extents = Vector2( 36, 3.5 )
+
 [node name="Tractor" type="KinematicBody2D"]
 z_index = 3
 script = ExtResource( 1 )
@@ -29,3 +33,8 @@ frames = SubResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 0.75, 0.8 )
 shape = SubResource( 5 )
+
+[node name="Expanded harvester" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 0, -26.5 )
+shape = SubResource( 6 )

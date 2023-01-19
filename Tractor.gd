@@ -54,5 +54,19 @@ func _physics_process(delta):
 		
 		velocity -= velocity.normalized() * res #apply breaking
 	# Apply movement
-	velocity = move_and_slide(velocity)
+	var collision = move_and_collide(velocity*delta)
+	if collision:
+		if velocity.length() > 300:
+			velocity = collision.normal * velocity.length()
+		else:
+			velocity = velocity.slide(collision.normal)
+
+		
+
+	
+
+
+		
+	
+
 
