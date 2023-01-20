@@ -20,6 +20,7 @@ var isGhost: bool
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AnimatedSprite.play("default")
 	speedTimer = Timer.new()
 	add_child(speedTimer)
 	speedTimer.connect("timeout", self, "_on_timer_timeout")
@@ -122,13 +123,15 @@ func _combine():
 	ROTATION_SPEED = 0.02
 	$CombineCollider.disabled = false
 	$CombineCollider/Combine.visible = true
-
+	
 func _ghostMode():
 	isGhost = true
+	$AnimatedSprite.play("ghost")
 	ROTATION_SPEED = 0.08
 
 func reset_attachments():
 	isGhost = false
+	$AnimatedSprite.play("default")
 	$CombineCollider.disabled = true
 	$CombineCollider/Combine.visible = false
 
