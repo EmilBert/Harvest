@@ -104,27 +104,33 @@ func _physics_process(delta):
 
 func _input(_event):
 	if Input.is_action_pressed("Attachment1"):
+		reset_attachments()
 		_noAttachment()
 	if Input.is_action_pressed("Attachment2"):
+		reset_attachments()
 		_combine()
 	if Input.is_action_pressed("Attachment3"):
+		reset_attachments()
 		_ghostMode()
 
 
 func _noAttachment():
-	isGhost = false
 	ROTATION_SPEED = 0.08
-
 
 func _combine():
 	isGhost = false
 	ROTATION_SPEED = 0.02
-
+	$CombineCollider.disabled = false
+	$CombineCollider/Combine.visible = true
 
 func _ghostMode():
 	isGhost = true
 	ROTATION_SPEED = 0.08
 
+func reset_attachments():
+	isGhost = false
+	$CombineCollider.disabled = true
+	$CombineCollider/Combine.visible = false
 
 func turbo():
 	speedTimer.start()

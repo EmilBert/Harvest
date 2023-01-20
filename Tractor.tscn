@@ -101,12 +101,12 @@ scale_amount_random = 1.0
 color_ramp = SubResource( 7 )
 
 [node name="CombineCollider" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, -29.5 )
 shape = SubResource( 6 )
 disabled = true
 
 [node name="Combine" type="Sprite" parent="CombineCollider"]
+visible = false
 position = Vector2( 0, -3.5 )
 scale = Vector2( 1.2, 1.2 )
 z_index = -1
