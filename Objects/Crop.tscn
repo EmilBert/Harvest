@@ -12,6 +12,7 @@ radius = 7.0
 height = 10.0
 
 [node name="Crop" type="Node2D"]
+scale = Vector2( 2, 2 )
 z_index = 2
 script = ExtResource( 2 )
 

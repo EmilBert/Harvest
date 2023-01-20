@@ -12,6 +12,7 @@ radius = 7.0
 height = 0.0
 
 [node name="CropBounce" type="Node2D"]
+scale = Vector2( 3, 3 )
 z_index = 2
 script = ExtResource( 2 )
 
