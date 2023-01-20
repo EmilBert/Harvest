@@ -99,5 +99,5 @@ z_index = 1
 gradient = SubResource( 1 )
 
 [node name="Crombo" parent="." instance=ExtResource( 9 )]
-position = Vector2( 100, 42 )
+position = Vector2( 100, 23 )
 z_index = 6

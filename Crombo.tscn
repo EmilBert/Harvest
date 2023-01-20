@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/ALL UI ASSETS on one sheet.png" type="Texture" id=1]
 [ext_resource path="res://RulerGold.ttf" type="DynamicFontData" id=2]
@@ -25,6 +25,12 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color( 0.564706, 0.384314, 0.364706, 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 50
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 2 )
 
 [node name="Crombo" type="Node2D"]
 script = ExtResource( 3 )
@@ -79,3 +85,16 @@ max_value = 1.0
 step = 0.001
 value = 1.0
 percent_visible = false
+
+[node name="Praise" type="RichTextLabel" parent="."]
+margin_left = -100.0
+margin_top = 161.0
+margin_right = 1180.0
+margin_bottom = 207.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 5 )
+bbcode_enabled = true
+bbcode_text = "[center]"
+tab_size = 6
+fit_content_height = true
+scroll_active = false
