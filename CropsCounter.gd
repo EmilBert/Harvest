@@ -2,11 +2,12 @@ extends Node2D
 
 var count = 0
 var initCount
-onready var gameMaster = get_node("/root/World")
+onready var gameMaster
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	gameMaster = get_parent().get_parent()
 	pass
 
 

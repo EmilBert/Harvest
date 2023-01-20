@@ -21,15 +21,13 @@ func _updateTimer():
 	$Control/RichTextLabel.bbcode_text = "[center] Time: " + str(value)
 
 
-func _resetTimer():
-	if Input.is_action_pressed("ui_select"):
-		timer.stop()
-		value = 0
-		_updateTimer()
-		timer.start()
+func resetTimer():
+	timer.stop()
+	value = 0
+	_updateTimer()
+	timer.start()
 
-
-# Helper function to reset timer. This should not be used in the actual game.
-func _input(event):
-	if event.is_action_pressed("ui_select"):
-		_resetTimer()
+# # Helper function to reset timer. This should not be used in the actual game.
+# func _input(event):
+# 	if event.is_action_pressed("ui_select"):
+# 		_resetTimer()

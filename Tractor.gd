@@ -29,8 +29,8 @@ func _ready():
 	isGhost = false
 
 	# Update trail
-	left_trail = get_node("/root/World/TrailRight")
-	right_trail = get_node("/root/World/TrailLeft")
+	left_trail = get_parent().get_node("TrailLeft")
+	right_trail = get_parent().get_node("TrailRight")
 
 	pass  # Replace with function body.
 

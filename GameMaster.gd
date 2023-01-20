@@ -2,8 +2,8 @@ extends Node2D
 
 var cropCount = 0
 var initCount = cropCount
-onready var cropsCounter = get_node("/root/World/CropsCounter")
-onready var crombo = get_node("/root/World/Crombo")
+onready var cropsCounter = $CropSpawner/CropsCounter
+onready var crombo = $Crombo
 
 
 # Called when the node enters the scene tree for the first time.
@@ -22,7 +22,5 @@ func addCrop():
 
 
 func _resetCrops():
-	if Input.is_action_pressed("ui_select"):
-		cropCount = 0
-		initCount = cropCount
-
+	cropCount = 0
+	initCount = cropCount

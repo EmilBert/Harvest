@@ -1,10 +1,11 @@
 extends Node2D
 
 onready var area: Area2D = get_node("Area2D")
-onready var gameMaster = get_node("/root/World")
+onready var gameMaster
 
 
 func _ready():
+	gameMaster = get_parent().get_parent()
 	gameMaster.addCrop()
 	pass
 

@@ -1,10 +1,10 @@
 extends Node2D
 
-onready var cropArea: TileMap = get_node("/root/World/SpawnableCropArea")
-onready var bounceArea: TileMap = get_node("/root/World/SpawnableCropAreaBounce")
-onready var turboArea: TileMap = get_node("/root/World/SpawnableCropAreaTurbo")
-onready var ghostArea: TileMap = get_node("/root/World/SpawnableCropAreaGhost")
-onready var counterSign = get_node("/root/World/CropsCounter")
+onready var cropArea: TileMap = $SpawnableCropArea
+onready var bounceArea: TileMap = $SpawnableCropAreaBounce
+onready var turboArea: TileMap = $SpawnableCropAreaTurbo
+onready var ghostArea: TileMap = $SpawnableCropAreaGhost
+onready var counterSign = $CropsCounter
 
 var usedCells
 var crop = preload("res://Objects/Crop.tscn")

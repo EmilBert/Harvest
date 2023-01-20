@@ -1,11 +1,13 @@
 extends Node2D
 
 onready var area: Area2D = get_node("Area2D")
-onready var gameMaster = get_node("/root/World")
-onready var tractor = get_node("/root/World/Tractor")
+onready var gameMaster
+onready var tractor
 
 
 func _ready():
+	tractor = get_tree().get_root().find_node("Tractor")
+	gameMaster = get_parent().get_parent()
 	gameMaster.addCrop()
 	pass
 
@@ -17,5 +19,5 @@ func _on_Area2D_body_entered(body: Node):
 		if body.isGhost == true:
 			return
 		gameMaster.removeCrop()
-		tractor.bounce(position)
+		body.bounce(position)
 		queue_free()
