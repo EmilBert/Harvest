@@ -37,7 +37,7 @@ script = ExtResource( 2 )
 scale = Vector2( 1.2, 1.2 )
 texture = SubResource( 1 )
 
-[node name="CPUParticles2D2" type="CPUParticles2D" parent="Sprite"]
+[node name="Ghost Smoke" type="CPUParticles2D" parent="Sprite"]
 material = SubResource( 6 )
 scale = Vector2( 10, 10 )
 amount = 128
@@ -52,7 +52,7 @@ scale_amount = 0.3
 scale_amount_curve = SubResource( 4 )
 color = Color( 0.74902, 1, 0.988235, 0.0392157 )
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Sprite"]
+[node name="Ghost Stars" type="CPUParticles2D" parent="Sprite"]
 material = SubResource( 7 )
 amount = 3
 speed_scale = 0.6
