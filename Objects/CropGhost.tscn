@@ -30,7 +30,6 @@ radius = 7.0
 height = 10.0
 
 [node name="CropGhost" type="Node2D"]
-scale = Vector2( 3, 3 )
 z_index = 2
 script = ExtResource( 2 )
 
