@@ -64,8 +64,6 @@ text = "CROMBO:"
 fit_content_height = true
 scroll_active = false
 
-[node name="Timer" type="Timer" parent="Control"]
-
 [node name="ProgressBar" type="ProgressBar" parent="Control"]
 margin_left = -79.0
 margin_top = 4.0

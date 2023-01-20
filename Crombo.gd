@@ -7,7 +7,7 @@ onready var pb = get_node("Control/ProgressBar")
 onready var gameMaster = get_node("/root/World")
 
 var maxTime = 1.0
-var delta  = 0.02
+var delta  = 0.03
 var value = 0.0
 
 # Declare member variables here. Examples:
