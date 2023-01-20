@@ -1,25 +1,39 @@
 extends Node2D
 
-onready var farmableArea: TileMap = get_node("/root/World/SpawnableCropArea")
+onready var cropArea: TileMap = get_node("/root/World/SpawnableCropArea")
+onready var bounceArea: TileMap = get_node("/root/World/SpawnableCropAreaBounce")
+onready var turboArea: TileMap = get_node("/root/World/SpawnableCropAreaTurbo")
+onready var ghostArea: TileMap = get_node("/root/World/SpawnableCropAreaGhost")
 onready var counterSign = get_node("/root/World/CropsCounter")
+
 var usedCells
 var crop = preload("res://Objects/Crop.tscn")
+var bounceCrop = preload("res://Objects/CropBounce.tscn")
+var turboCrop = preload("res://Objects/CropTurbo.tscn")
+var ghostCrop = preload("res://Objects/CropGhost.tscn")
 
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	usedCells = farmableArea.get_used_cells()
-	var cellSize = farmableArea.map_to_world(usedCells[1]) - farmableArea.map_to_world(usedCells[0])
+	_spawnCrops(crop, cropArea)
+	_spawnCrops(bounceCrop, bounceArea)
+	_spawnCrops(turboCrop, turboArea)
+	_spawnCrops(ghostCrop, ghostArea)
+
+
+func _spawnCrops(inCrop, inArea):
+	# Spawn regular crops
+	usedCells = inArea.get_used_cells()
+
 	for availablePlotCoordinate in usedCells.size():
-		var cropInstance = crop.instance()
-		cropInstance.position = (to_global(
-			farmableArea.map_to_world(usedCells[availablePlotCoordinate]) + cellSize / 2
-		))
+		var cropInstance = inCrop.instance()
+		var offset = Vector2(3, -3)
+		cropInstance.position = (
+			(to_global(inArea.map_to_world(usedCells[availablePlotCoordinate])))
+			+ offset
+		)
+
 		add_child(cropInstance)
 
 	# All have spawned, add count to sign
 	counterSign.updateCount()
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
