@@ -23,3 +23,4 @@ func _resetCrops():
 	if Input.is_action_pressed("ui_select"):
 		cropCount = 0
 		initCount = cropCount
+

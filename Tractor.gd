@@ -3,7 +3,7 @@ extends KinematicBody2D
 const SPEED = Vector2(0, -600)
 const FRICTION = 0.02
 const ACCELERATOIN = 0.06
-const ROTATION_SPEED = 0.08
+var ROTATION_SPEED = 0.08
 const minWheelAngle = 0.05
 const driftResistance = 20
 var velocity = Vector2()
@@ -73,7 +73,23 @@ func _physics_process(delta):
 
 		
 
+func _input(event):
+	if Input.is_action_pressed("Attachment1"):
+		_noAttachment()
+	if Input.is_action_pressed("Attachment2"):
+		_combine()
+	if Input.is_action_pressed("Attachment3"):
+		_ghostMode()
+
+func _noAttachment():
+	ROTATION_SPEED = 0.08
 	
+func _combine():
+	ROTATION_SPEED = 0.02
+	
+func _ghostMode():
+	ROTATION_SPEED = 0.08
+
 
 
 		
