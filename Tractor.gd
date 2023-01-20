@@ -12,6 +12,8 @@ var rot = 0
 
 var speedTimer
 
+var right_trail
+var left_trail
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -20,11 +22,26 @@ func _ready():
 	speedTimer.connect("timeout", self, "_on_timer_timeout")
 	speedTimer.set_wait_time(3)
 
+	# Update trail
+	left_trail =  get_node("/root/World/TrailRight")
+	right_trail = get_node("/root/World/TrailLeft")
+
 	pass  # Replace with function body.
 
 
 func _physics_process(delta):
 	# Called every frame. Delta is time since last frame.
+
+	# Update trail
+	if right_trail.get_point_count() >= 200:
+		right_trail.remove_point(0)
+		left_trail.remove_point(0)
+
+	right_trail.add_point($RightTirePos.global_position)
+	left_trail.add_point($LeftTirePos.global_position)
+	
+	
+	
 	# Update movement vector
 
 	var res = 4
