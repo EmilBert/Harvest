@@ -130,7 +130,10 @@ func turbo():
 	speedTimer.start()
 	$Fire.emitting = true
 	speedModifier = 2
-	pass
+
+
+func bounce(bouncePosition):
+	velocity = (position - bouncePosition).normalized() * velocity.length() * 2
 
 
 func _on_timer_timeout():
