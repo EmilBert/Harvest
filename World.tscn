@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Tractor.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Timer.tscn" type="PackedScene" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://CropSpawner.gd" type="Script" id=6]
 [ext_resource path="res://CropsCounter.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Objects/CropTurbo.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Objects/CropGhost.tscn" type="PackedScene" id=9]
 [ext_resource path="res://GameMaster.gd" type="Script" id=10]
 
 [sub_resource type="Gradient" id=1]
@@ -72,6 +73,9 @@ position = Vector2( 572, 224 )
 z_index = 1
 default_color = Color( 0.4, 0.501961, 1, 1 )
 gradient = SubResource( 1 )
+
+[node name="CropGhost" parent="TrailRight" instance=ExtResource( 9 )]
+position = Vector2( 678, 245 )
 
 [node name="TrailLeft" type="Line2D" parent="."]
 z_index = 1

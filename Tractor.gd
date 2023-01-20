@@ -15,6 +15,8 @@ var speedTimer
 var right_trail
 var left_trail
 
+var isGhost: bool
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -22,6 +24,8 @@ func _ready():
 	add_child(speedTimer)
 	speedTimer.connect("timeout", self, "_on_timer_timeout")
 	speedTimer.set_wait_time(3)
+
+	isGhost = false
 
 	# Update trail
 	left_trail = get_node("/root/World/TrailRight")
@@ -108,14 +112,17 @@ func _input(_event):
 
 
 func _noAttachment():
+	isGhost = false
 	ROTATION_SPEED = 0.08
 
 
 func _combine():
+	isGhost = false
 	ROTATION_SPEED = 0.02
 
 
 func _ghostMode():
+	isGhost = true
 	ROTATION_SPEED = 0.08
 
 
