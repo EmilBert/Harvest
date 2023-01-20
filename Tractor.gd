@@ -12,19 +12,40 @@ var rot = 0
 
 var speedTimer
 
+var right_trail
+var left_trail
+
+var isGhost: bool
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$AnimatedSprite.play("default")
 	speedTimer = Timer.new()
 	add_child(speedTimer)
 	speedTimer.connect("timeout", self, "_on_timer_timeout")
 	speedTimer.set_wait_time(3)
+
+	isGhost = false
+
+	# Update trail
+	left_trail = get_node("/root/World/TrailRight")
+	right_trail = get_node("/root/World/TrailLeft")
 
 	pass  # Replace with function body.
 
 
 func _physics_process(delta):
 	# Called every frame. Delta is time since last frame.
+
+	# Update trail
+	if right_trail.get_point_count() >= 100:
+		right_trail.remove_point(0)
+		left_trail.remove_point(0)
+
+	right_trail.add_point($RightTirePos.global_position)
+	left_trail.add_point($LeftTirePos.global_position)
+
 	# Update movement vector
 
 	var res = 4
@@ -50,13 +71,15 @@ func _physics_process(delta):
 		if abs(sin(angle)) > minWheelAngle:  #Is the turn big enough to give a drift, then drift
 			velocity += Vector2(sin(angle) * driftResistance, 0).rotated(rotation)
 			# Activate drift smoke
-			$DriftSmoke1.emitting = true
-			$DriftSmoke2.emitting = true
+			if abs(sin(angle)) > 10 * minWheelAngle:
+				$DriftSmoke1.emitting = true
+				$DriftSmoke2.emitting = true
+			else:
+				$DriftSmoke1.emitting = false
+				$DriftSmoke2.emitting = false
 
 		else:
 			velocity *= abs(cos(angle))
-			$DriftSmoke1.emitting = false
-			$DriftSmoke2.emitting = false
 
 		velocity -= velocity.normalized() * res  #apply breaking
 
@@ -80,32 +103,46 @@ func _physics_process(delta):
 			velocity = velocity.slide(collision.normal)
 
 
-func _input(event):
+func _input(_event):
 	if Input.is_action_pressed("Attachment1"):
+		reset_attachments()
 		_noAttachment()
 	if Input.is_action_pressed("Attachment2"):
+		reset_attachments()
 		_combine()
 	if Input.is_action_pressed("Attachment3"):
+		reset_attachments()
 		_ghostMode()
 
 
 func _noAttachment():
 	ROTATION_SPEED = 0.08
 
-
 func _combine():
+	isGhost = false
 	ROTATION_SPEED = 0.02
-
-
+	$CombineCollider.disabled = false
+	$CombineCollider/Combine.visible = true
+	
 func _ghostMode():
+	isGhost = true
+	$AnimatedSprite.play("ghost")
 	ROTATION_SPEED = 0.08
 
+func reset_attachments():
+	isGhost = false
+	$AnimatedSprite.play("default")
+	$CombineCollider.disabled = true
+	$CombineCollider/Combine.visible = false
 
 func turbo():
 	speedTimer.start()
 	$Fire.emitting = true
 	speedModifier = 2
-	pass
+
+
+func bounce(bouncePosition):
+	velocity = (position - bouncePosition).normalized() * velocity.length() * 2
 
 
 func _on_timer_timeout():

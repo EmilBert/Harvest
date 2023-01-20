@@ -1,9 +1,14 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Tractor.gd" type="Script" id=1]
 [ext_resource path="res://tractor.png" type="Texture" id=2]
 [ext_resource path="res://smoke.png" type="Texture" id=3]
 [ext_resource path="res://tractor-thing.png" type="Texture" id=4]
+[ext_resource path="res://ghost-tractor.png" type="Texture" id=5]
+
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
@@ -11,6 +16,11 @@ region = Rect2( 0, 0, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "ghost",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 4 ) ],
 "loop": true,
 "name": "default",
@@ -21,8 +31,7 @@ animations = [ {
 radius = 29.4397
 
 [sub_resource type="Gradient" id=7]
-offsets = PoolRealArray( 0, 0.624138 )
-colors = PoolColorArray( 1, 1, 1, 1, 1, 0.415623, 0.00432277, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 0.539062, 0, 1 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 38, 4.5 )
@@ -34,6 +43,7 @@ script = ExtResource( 1 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 1.5, 1.5 )
 frames = SubResource( 2 )
+animation = "ghost"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2( 0.75, 0.8 )
@@ -102,13 +112,19 @@ scale_amount_random = 1.0
 color_ramp = SubResource( 7 )
 
 [node name="CombineCollider" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, -29.5 )
 shape = SubResource( 6 )
 disabled = true
 
 [node name="Combine" type="Sprite" parent="CombineCollider"]
+visible = false
 position = Vector2( 0, -3.5 )
 scale = Vector2( 1.2, 1.2 )
 z_index = -1
 texture = ExtResource( 4 )
+
+[node name="RightTirePos" type="Position2D" parent="."]
+position = Vector2( -15, 14 )
+
+[node name="LeftTirePos" type="Position2D" parent="."]
+position = Vector2( 16, 13 )

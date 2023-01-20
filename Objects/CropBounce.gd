@@ -16,5 +16,5 @@ func _on_Area2D_body_entered(body: Node):
 	if body.name == "Tractor":
 		gameMaster.removeCrop()
 		# TODO: Add bounce
-		#tractor.bounce(position)
+		tractor.bounce(position)
 		queue_free()
