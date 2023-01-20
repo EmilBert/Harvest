@@ -1,23 +1,29 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://sprout/Sprout Lands - Sprites - premium pack/objects/Farming Plants.png" type="Texture" id=1]
-[ext_resource path="res://Objects/Crop.gd" type="Script" id=2]
+[ext_resource path="res://Objects/CropGhost.gd" type="Script" id=2]
 [ext_resource path="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/stars_new.png" type="Texture" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
 region = Rect2( 47.335, 207.996, 16, 16 )
 
-[sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 3 )
-region = Rect2( 0.157, 0.542, 16, 16 )
+[sub_resource type="CanvasItemMaterial" id=6]
+blend_mode = 1
 
 [sub_resource type="Curve" id=4]
 _data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.5, 0.966258 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
 
+[sub_resource type="CanvasItemMaterial" id=7]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id=3]
+atlas = ExtResource( 3 )
+region = Rect2( 0.157, 0.542, 16, 16 )
+
 [sub_resource type="Gradient" id=5]
-offsets = PoolRealArray( 0.0196078, 0.465686, 0.817402, 1 )
-colors = PoolColorArray( 1, 1, 1, 0, 1, 1, 1, 1, 0.0965418, 0.904713, 1, 1, 0.65098, 0.964706, 1, 0 )
+offsets = PoolRealArray( 0.675245, 0.855392, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.0965418, 0.904713, 1, 1, 0.65098, 0.964706, 1, 0 )
 
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 7.0
@@ -31,8 +37,25 @@ script = ExtResource( 2 )
 scale = Vector2( 1.2, 1.2 )
 texture = SubResource( 1 )
 
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="Sprite"]
+material = SubResource( 6 )
+scale = Vector2( 10, 10 )
+amount = 128
+speed_scale = 0.26
+emission_shape = 1
+emission_sphere_radius = 0.6
+spread = 15.25
+gravity = Vector2( 0, -1 )
+angular_velocity_random = 1.0
+linear_accel_random = 0.16
+scale_amount = 0.3
+scale_amount_curve = SubResource( 4 )
+color = Color( 0.74902, 1, 0.988235, 0.0392157 )
+
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Sprite"]
-amount = 16
+material = SubResource( 7 )
+amount = 3
+speed_scale = 0.6
 texture = SubResource( 3 )
 emission_shape = 1
 emission_sphere_radius = 8.07
