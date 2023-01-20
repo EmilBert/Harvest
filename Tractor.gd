@@ -118,22 +118,32 @@ func _input(_event):
 func _noAttachment():
 	ROTATION_SPEED = 0.08
 
+
 func _combine():
 	isGhost = false
 	ROTATION_SPEED = 0.02
+	$"Ghost Smoke".emitting = false
+	$"Ghost Stars".emitting = false
 	$CombineCollider.disabled = false
 	$CombineCollider/Combine.visible = true
-	
+
+
 func _ghostMode():
 	isGhost = true
+	$"Ghost Smoke".emitting = true
+	$"Ghost Stars".emitting = true
 	$AnimatedSprite.play("ghost")
 	ROTATION_SPEED = 0.08
 
+
 func reset_attachments():
 	isGhost = false
+	$"Ghost Smoke".emitting = false
+	$"Ghost Stars".emitting = false
 	$AnimatedSprite.play("default")
 	$CombineCollider.disabled = true
 	$CombineCollider/Combine.visible = false
+
 
 func turbo():
 	speedTimer.start()

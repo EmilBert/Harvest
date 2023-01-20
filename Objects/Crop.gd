@@ -13,5 +13,7 @@ func _on_Area2D_body_entered(body: Node):
 	# TODO: Send signal to game master to decrease remaining crop count
 	# Destroy this object
 	if body.name == "Tractor":
+		if body.isGhost == true:
+			return
 		gameMaster.removeCrop()
 		queue_free()

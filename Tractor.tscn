@@ -1,29 +1,30 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=18 format=2]
 
 [ext_resource path="res://Tractor.gd" type="Script" id=1]
 [ext_resource path="res://tractor.png" type="Texture" id=2]
 [ext_resource path="res://smoke.png" type="Texture" id=3]
 [ext_resource path="res://tractor-thing.png" type="Texture" id=4]
 [ext_resource path="res://ghost-tractor.png" type="Texture" id=5]
-
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 32, 32 )
+[ext_resource path="res://sprout/Sprout Lands - UI Pack - Premium pack/UI Sprites/Icons/special icons/stars_new.png" type="Texture" id=6]
 
 [sub_resource type="AtlasTexture" id=4]
 atlas = ExtResource( 2 )
 region = Rect2( 0, 0, 32, 32 )
 
+[sub_resource type="AtlasTexture" id=8]
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
+
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ SubResource( 8 ) ],
-"loop": true,
-"name": "ghost",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 4 ) ],
 "loop": true,
 "name": "default",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 8 ) ],
+"loop": true,
+"name": "ghost",
 "speed": 5.0
 } ]
 
@@ -35,6 +36,23 @@ colors = PoolColorArray( 1, 1, 1, 1, 1, 0.539062, 0, 1 )
 
 [sub_resource type="RectangleShape2D" id=6]
 extents = Vector2( 38, 4.5 )
+
+[sub_resource type="CanvasItemMaterial" id=9]
+blend_mode = 1
+
+[sub_resource type="Curve" id=10]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.5, 0.966258 ), 0.0, 0.0, 0, 0, Vector2( 1, 0 ), 0.0, 0.0, 0, 0 ]
+
+[sub_resource type="CanvasItemMaterial" id=11]
+blend_mode = 1
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 6 )
+region = Rect2( 0.157, 0.542, 16, 16 )
+
+[sub_resource type="Gradient" id=13]
+offsets = PoolRealArray( 0.675245, 0.855392, 1 )
+colors = PoolColorArray( 1, 1, 1, 1, 0.0965418, 0.904713, 1, 1, 0.65098, 0.964706, 1, 0 )
 
 [node name="Tractor" type="KinematicBody2D"]
 z_index = 3
@@ -126,3 +144,38 @@ position = Vector2( -15, 14 )
 
 [node name="LeftTirePos" type="Position2D" parent="."]
 position = Vector2( 16, 13 )
+
+[node name="Ghost Smoke" type="CPUParticles2D" parent="."]
+material = SubResource( 9 )
+scale = Vector2( 30, 30 )
+emitting = false
+amount = 128
+speed_scale = 0.26
+emission_shape = 1
+emission_sphere_radius = 0.6
+spread = 15.25
+gravity = Vector2( 0, -1 )
+angular_velocity_random = 1.0
+linear_accel_random = 0.16
+scale_amount = 0.3
+scale_amount_curve = SubResource( 10 )
+color = Color( 0.74902, 1, 0.988235, 0.0392157 )
+
+[node name="Ghost Stars" type="CPUParticles2D" parent="."]
+material = SubResource( 11 )
+scale = Vector2( 3, 3 )
+emitting = false
+amount = 3
+speed_scale = 0.6
+texture = SubResource( 12 )
+emission_shape = 1
+emission_sphere_radius = 8.07
+gravity = Vector2( 0, -10 )
+angular_velocity_random = 1.0
+linear_accel_random = 0.27
+radial_accel = 3.69
+scale_amount = 0.3
+scale_amount_curve = SubResource( 10 )
+color_ramp = SubResource( 13 )
+hue_variation = 0.05
+hue_variation_random = 1.0
